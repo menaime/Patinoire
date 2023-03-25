@@ -7,7 +7,7 @@
     @apply overflow-hidden text-primary font-secondary bg-white;
   }
   .h1 {
-    @apply text-[54px] lg:text-[120px] font-primary font-bold capitalize leading-[100%] tracking-[-0.03em] mb-10;
+    @apply text-[54px] lg:text-[100px] font-primary font-bold capitalize leading-[100%] tracking-[-0.03em] mb-10 text-center;
   }
   .h2 {
     @apply text-[25px] lg:text-[50px] font-primary font-bold capitalize leading-[100%] tracking-[-0.03em] mb-10;
@@ -19,7 +19,7 @@
     @apply py-[18px] px-[50px] h-[66px] flex items-center justify-start text-base uppercase font-secondary font-semibold bg-primary text-white;
   }
   .btn2 {
-    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-start text-base uppercase font-secondary font-semibold bg-primary text-white;
+    @apply py-[18px] px-[50px] h-[66px] flex items-center justify-start text-center uppercase font-secondary font-semibold bg-primary text-white;
   }
   
 

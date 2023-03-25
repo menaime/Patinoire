@@ -7,6 +7,7 @@ import Contact from '../pages/Contact';
 import Rdg from '../pages/Rdg';
 import Tarifs from '../pages/Tarifs';
 import Tarifs2 from '../pages/Tarifs2';
+import Horaire from '../pages/Horaire';
 // import routes route & useLocation hook
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
@@ -22,7 +23,10 @@ const AnimRoutes = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path="/Rdg" element={<Rdg />} />
         <Route path="/Tarifs" element={<Tarifs />} />
-        <Route path="/Tarifs2" element={<Tarifs2 />} />
+        <Route path="/horaire" element={<Horaire />} />
+        <Route path="/tarifs2" element={<Tarifs2 />} />
+
+       
       </Routes>
     </AnimatePresence>
   );

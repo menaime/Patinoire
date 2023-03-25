@@ -7,20 +7,20 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 // import transition
 import { transition1 } from '../transitions';
-// cursor context
+// import cursor context
 import { CursorContext } from '../context/CursorContext';
 
-const Home = () => {
+const Horaire = () => {
   const { mouseEnterHandler, mouseLeaveHandler } = useContext(CursorContext);
   return (
     <motion.section
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
+      initial={{ opacity: 0, y: '100%' }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: '100%' }}
       transition={transition1}
       className='section'
     >
-      <div className='md:container  mx-auto px-20 '>
+       <div className='container flex-auto mx-auto py-2 px-3.5 '>
         {/* text & img wrapper */}
         <div className='flex-col justify-center py-20 '>
           {/* text */}
@@ -33,18 +33,17 @@ const Home = () => {
             onMouseLeave={mouseLeaveHandler}
             className='w-full pt-36 pb-14 lg:pt-0 lg:pb-0 lg:w-auto z-10 lg:absolute flex flex-col justify-center items-center lg:items-start'
           >
-            <h1 className='h1'>
-              La Patinoire <br /> De Charleroi
+            <h1 className='h2'>
+              Dernier mois <br />Dimanche 02 Avril 2023
             </h1>
             <p className='text-[26px] lg:text-[40px] font-primary mb-4 lg:mb-12'>
-              Rue Neuve 75 a 6061 <br />Montignies Sur Sambre </p>
+              La Saison Commencera <br />Le Premier Octobre </p>
 
             <div className='flex pt-4 space-x-6'>
-            <Link to={'/About'} className='btn mb-[30px]'>
-              Entrer
+            <Link to={'/Contact'} className='btn mb-[30px]'>
+              Contactez-Nous
             </Link>
-            <Link to={'/Horaire'} className='btn mb-[30px] '>  LaSaison
-            </Link>
+          
             </div>
 
 
@@ -72,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Horaire;

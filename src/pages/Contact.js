@@ -35,7 +35,7 @@ const Contact = () => {
             onMouseLeave={mouseLeaveHandler}
             className='lg:flex-1 lg:pt-32 px-4'
           >
-            <h1 className='h1'>Contactez Nous</h1>
+            <h1 className='h2'>Contactez Nous</h1>
             <p className='mb-12'>Nous aimons avoir vos suggestions.</p>
             {/* form */}
             <form className='flex flex-col gap-y-4'>
@@ -57,7 +57,7 @@ const Contact = () => {
                 placeholder='Vôtre message'
               />
               <button className='btn mb-[30px] mx-auto lg:mx-0 self-start'>
-                Send it
+                Envoyer votre message
               </button>
             </form>
           </div>

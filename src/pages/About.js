@@ -39,7 +39,7 @@ const About = () => {
             transition={transition1}
             className='flex-1 pt-36 pb-14 lg:pt-0 lg:w-auto z-10 flex flex-col justify-center items-center lg:items-start'
           >
-            <h1 className='h1'>Histoire</h1>
+            <h1 className='h2'>Histoire</h1>
             <p className='mb-12 max-w-sm'>
             La patinoire est créée en 1973 à l'initiative de Madame Loréal Renée et de Monsieur Masson François.
             Elle est construite sur un terrain communal de Montignies sur Sambre, dirigé alors par Monsieur Poffée, bourgmestre de l'époque.
